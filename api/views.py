@@ -1,5 +1,5 @@
 from db import Db
-from flask import request
+from flask import request, jsonify
 from flask_restful import Resource
 from sqlalchemy import text as sql_text
 
@@ -18,7 +18,7 @@ class Book(Resource):
         keys = res.keys()
         books = self.db.clean_select_results(rows, keys)
 
-        return {
+        return{
             'Books': books
         }
 
