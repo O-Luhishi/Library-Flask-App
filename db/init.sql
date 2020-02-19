@@ -1,6 +1,3 @@
-CREATE DATABASE `library_db`;
-USE `library_db`;
-
 CREATE TABLE `book` (
     `id` INT(11) PRIMARY KEY AUTO_INCREMENT,
     `title` VARCHAR(512) NOT NULL,
