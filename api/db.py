@@ -6,7 +6,7 @@ from sqlalchemy import create_engine
 
 class Db:
     def __init__(self):
-        db_url = "mysql+pymysql://root:password@localhost/library_db"
+        db_url = "mysql+pymysql://dbuser:dbpassword@db/library_db"
 
         engine = create_engine(db_url)
         self.connection = engine.connect()
